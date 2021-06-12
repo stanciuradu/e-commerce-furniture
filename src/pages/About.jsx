@@ -7,7 +7,7 @@ function About() {
     <div className="container">
       <Layout>
         <div className="about">
-          <h1>About our history</h1>
+          <h1>Despre istoria noastră</h1>
           <div class="row">
             <div class="col-6">
               <img src="https://i.imgur.com/ENu8n56.jpg" alt="" />
