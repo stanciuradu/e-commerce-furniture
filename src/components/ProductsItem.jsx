@@ -10,6 +10,7 @@ function ProductsItem(props) {
         <p>{name}</p>
         <p>{price}</p>
       </div>
+        <button className='btn btn-outline-warning mb-2'>Adaugă în Cart</button>
     </div>
   );
 }
