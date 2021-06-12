@@ -43,7 +43,7 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="title">
-            <h2 className="text-center mt-3">Produse recomandate</h2>
+            <h2 className="text-center mt-3 mb-1">Produse recomandate</h2>
             <ProductsRecomList productsRecom={this.state.productsRecom} />
           </div>
         </Layout>
