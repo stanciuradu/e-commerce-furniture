@@ -15,12 +15,7 @@ class Products extends React.Component {
   componentDidMount() {
     this.setState({ products: products });
   }
-  handleIncrementCounter() {
-    this.setState({ count: this.state.count + 1 });
-  }
-  handleDecrementCounter() {
-    this.setState({ count: this.state.count - 1 });
-  }
+  
   render() {
     return (
       <div className="container">
