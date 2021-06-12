@@ -1,0 +1,11 @@
+.container .footer {
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer {
+  padding: 1.5rem;
+  background-color: rgb(158, 45, 45);
+  color: white;
+}

@@ -1,0 +1,13 @@
+.container .about {
+  padding: 2rem;
+  color: black;
+}
+.about .col-6 img {
+  margin-top: 2rem;
+  width: 20rem;
+}
+.container .about h1 {
+  background-color: rgb(158, 45, 45);
+  color: white;
+  text-align: center;
+}

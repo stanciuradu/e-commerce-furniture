@@ -1,0 +1,12 @@
+.row .btn:hover {
+  background-color: coral;
+}
+.row .col-6 p {
+  color: coral;
+}
+.row .col-6 img {
+  width: 35rem;
+}
+.title h2 {
+  font-family: "Playfair Display", serif;
+}

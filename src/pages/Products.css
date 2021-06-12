@@ -1,0 +1,38 @@
+.container .products {
+  display: flex;
+  background-color: white;
+  border: none;
+}
+
+.products button {
+  border: none;
+  background-color: white;
+}
+.container h4 {
+  font-family: "Playfair Display", serif;
+}
+.container .choose-colors button {
+  display: flex;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: white;
+}
+.choose-colors #red {
+  background-color: red;
+}
+.choose-colors #green {
+  background-color: green;
+}
+.choose-colors #blue {
+  background-color: blue;
+}
+.choose-colors #brown {
+  background-color: brown;
+}
+.choose-colors #beige {
+  background-color: beige;
+}
+.container .choose-colors {
+  display: flex;
+}

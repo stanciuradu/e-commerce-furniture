@@ -1,0 +1,8 @@
+.description {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.4rem;
+}
+.description #price {
+  color: coral;
+}
