@@ -8,11 +8,11 @@ function About() {
       <Layout>
         <div className="about">
           <h1>Despre istoria noastră</h1>
-          <div class="row">
-            <div class="col-6">
+          <div className="row">
+            <div className="col-6">
               <img src="https://i.imgur.com/ENu8n56.jpg" alt="" />
             </div>
-            <div class="col-6">
+            <div className="col-6">
               Toată lumea visează la o casa de vis. Prin intermediul nostru,
               Confort Suites, visele tale se pot îndeplini fără griiji. Suntem o
               companie relativ nouă pe piața imobiliară cu un precendetn de 2
