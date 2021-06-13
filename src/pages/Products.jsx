@@ -27,6 +27,7 @@ class Products extends React.Component {
     );
     this.setState({ products: filterProductsByOffice });
   }
+
   handleFilterProductsByLivingRoom(event) {
     const filterProductsByLivingRoom = this.state.products.filter(
       (product) =>
@@ -38,6 +39,7 @@ class Products extends React.Component {
     );
     this.setState({ products: filterProductsByLivingRoom });
   }
+
   handleFilterProductsByKitchen(event) {
     const handleFilterProductsByKitchen = this.state.products.filter(
       (product) =>
@@ -47,6 +49,7 @@ class Products extends React.Component {
     );
     this.setState({ products: handleFilterProductsByKitchen });
   }
+
   handleFilterProductsByBedroom(event) {
     const handleFilterProductsByBedroom = this.state.products.filter(
       (product) =>
@@ -56,12 +59,14 @@ class Products extends React.Component {
     );
     this.setState({ products: handleFilterProductsByBedroom });
   }
+
   handleFilterProductsByChildrenRoom(event) {
     const handleFilterProductsByChildrenRoom = this.state.products.filter(
       (product) => product.name === "Scaun" || product.name === "Birou de lemn"
     );
     this.setState({ products: handleFilterProductsByChildrenRoom });
   }
+  
   render() {
     return (
       <div className="container">
