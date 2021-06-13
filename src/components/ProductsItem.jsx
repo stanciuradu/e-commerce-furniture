@@ -32,11 +32,11 @@ class ProductsItem extends React.Component {
           <button type="button" onClick={() => this.handleIncrementCounter()}>
             +
           </button>
+          {/* randez continutul pe ecran al state-ului initial */}
+          <h1>{this.state.counter}</h1>
           <button type="button" onClick={() => this.handleDecrementCounter()}>
             -
           </button>
-          {/* randez continutul pe ecran al state-ului initial */}
-          <h1>{this.state.counter}</h1>
         </div>
       </div>
     );

@@ -12,8 +12,8 @@
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
 }
-.col-12-pi:hover {
-  transform: scale(1.1);
+.col-12-pi img:hover {
+  transform: scale(1.05);
   z-index: 1;
 }
 .quantity-buttons {
