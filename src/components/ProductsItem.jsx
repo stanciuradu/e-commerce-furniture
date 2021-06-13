@@ -5,7 +5,7 @@ class ProductsItem extends React.Component {
   constructor() {
     super();
     this.state = {
-      counter: 0,
+      counter: 0
     };
   }
   // fac functia pentru incemetare a state-ului cu o unitate
@@ -14,9 +14,7 @@ class ProductsItem extends React.Component {
   }
   // fac functioa pentru decrementare a state-ului cu o unitate
   handleDecrementCounter() {
-    this.setState({
-      counter: this.state.counter - 1,
-    });
+    this.setState({ counter: this.state.counter - 1 });
   }
   render() {
     const { image, name, price } = this.props;
@@ -30,14 +28,14 @@ class ProductsItem extends React.Component {
 
         <button className="btn btn-outline-warning mb-2">Adaugă în Cart</button>
         <p>Adaugă cantitatea de produse în coș</p>
-        <div className='quantity-buttons'>
-        <button type="button" onClick={() => this.handleIncrementCounter()}>
-          +
-        </button>
-        <button type="button" onClick={() => this.handleDecrementCounter()}>
-          -
-        </button>
-        {/* randez continutul pe ecran al state-ului initial */}
+        <div className="quantity-buttons">
+          <button type="button" onClick={() => this.handleIncrementCounter()}>
+            +
+          </button>
+          <button type="button" onClick={() => this.handleDecrementCounter()}>
+            -
+          </button>
+          {/* randez continutul pe ecran al state-ului initial */}
         </div>
         <h1>{this.state.counter}</h1>
       </div>
