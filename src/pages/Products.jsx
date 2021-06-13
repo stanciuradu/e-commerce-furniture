@@ -104,7 +104,7 @@ class Products extends React.Component {
                 this.handleFilterProductsByChildrenRoom(event)
               }
             >
-              Camera de copii
+              Cameră de copii
             </button>
           </button>
           {/* pasez array-ul ca props catre ProductsList pentru a se mapa prin el */}
