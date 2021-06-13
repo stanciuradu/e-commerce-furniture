@@ -36,7 +36,7 @@ class ProductsItem extends React.Component {
             -
           </button>
           {/* randez continutul pe ecran al state-ului initial */}
-        <h1>{this.state.counter}</h1>
+          <h1>{this.state.counter}</h1>
         </div>
       </div>
     );
