@@ -3,108 +3,108 @@
     "id": 1,
     "image": "https://i.imgur.com/F5b0AK6.jpg",
     "name": "Scaune pentru bar",
-    "price": "50$"
+    "price": "50Lei"
   },
   {
     "id": 2,
     "image": "https://i.imgur.com/RCf6X4n.jpg",
     "name": "Fotoliu",
-    "price": "30$"
+    "price": "30Lei"
   },
   {
     "id": 3,
     "image": "https://i.imgur.com/5Wmp7D1.jpg",
     "name": "Fotoliu din piele de căprioară",
-    "price": "100$"
+    "price": "100Lei"
   },
   {
     "id": 4,
     "image": "https://i.imgur.com/rrANimo.jpg",
     "name": "Scaun din piele",
-    "price": "60$"
+    "price": "60Lei"
   },
   {
     "id": 5,
     "image": "https://i.imgur.com/KnOE3Yk.jpg",
     "name": "Patul Regelui",
-    "price": "350$"
+    "price": "350Lei"
   },
   {
     "id": 6,
     "image": "https://i.imgur.com/IdBDmjO.jpg",
     "name": "Scaun Felix",
-    "price": "20$"
+    "price": "20Lei"
   },
   {
     "id": 7,
     "image": "https://i.imgur.com/sH8cWix.jpg",
     "name": "Raft pentru încălțăminte",
-    "price": "50$"
+    "price": "50Lei"
   },
   {
     "id": 8,
     "image": "https://i.imgur.com/Ycgt5Yk.jpg",
     "name": "Birou de lemn",
-    "price": "100$"
+    "price": "100Lei"
   },
   {
     "id": 9,
     "image": "https://i.imgur.com/Rew9Cwa.jpg",
     "name": "Masă de bucătărie",
-    "price": "120$"
+    "price": "120Lei"
   },
   {
     "id": 10,
     "image": "https://i.imgur.com/jNfOG4M.jpg",
     "name": "Sufragerie Strowmman",
-    "price": "1200$"
+    "price": "1200Lei"
   },
   {
     "id": 11,
     "image": "https://i.imgur.com/sdStioE.jpg",
     "name": "Canapea Sofiah-Voltera",
-    "price": "1500$"
+    "price": "1500Lei"
   },
   {
     "id": 12,
     "image": "https://i.imgur.com/61y7HNF.jpg",
     "name": "Canapea Sofiah-voltera din piele",
-    "price": "200$"
+    "price": "200Lei"
   },
   {
     "id": 13,
     "image": "https://i.imgur.com/ujxvBdd.jpg",
     "name": "Scaun",
-    "price": "20$"
+    "price": "20Lei"
   },
   {
     "id": 14,
     "image": "https://i.imgur.com/sEpgH8p.jpg",
     "name": "Sofa set",
-    "price": "500$"
+    "price": "500Lei"
   },
   {
     "id": 15,
     "image": "https://i.imgur.com/tx9kScP.jpg",
     "name": "Masă de lemn",
-    "price": "100$"
+    "price": "100Lei"
   },
   {
     "id": 16,
     "image": "https://i.imgur.com/u8s1jzd.jpg",
     "name": "Pat din lemn",
-    "price": "200$"
+    "price": "200Lei"
   },
   {
     "id": 17,
     "image": "https://i.imgur.com/lmdzdXa.jpg",
     "name": "Birou Albany",
-    "price": "350$"
+    "price": "350Lei"
   },
   {
     "id": 18,
     "image": "https://i.imgur.com/xzmCmAT.jpg",
     "name": "Raft suport Mario",
-    "price": "67$"
+    "price": "67Lei"
   }
 ]
