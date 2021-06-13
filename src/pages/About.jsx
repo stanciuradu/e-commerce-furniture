@@ -9,10 +9,10 @@ function About() {
         <div className="about">
           <h1>Despre istoria noastră</h1>
           <div className="row">
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               <img src="https://i.imgur.com/ENu8n56.jpg" alt="" />
             </div>
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               Toată lumea visează la o casa de vis. Prin intermediul nostru,
               Confort Suites, visele tale se pot îndeplini fără griiji. Suntem o
               companie relativ nouă pe piața imobiliară cu un precendetn de 2

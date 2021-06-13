@@ -22,7 +22,7 @@ class Home extends React.Component {
       <div className="container">
         <Layout>
           <div className="row">
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               <h1>
                 Decoreză-ți zona de confort cu cele mai minuntate modele de
                 mobilă
@@ -35,7 +35,7 @@ class Home extends React.Component {
                 <button className="btn btn-info">Cumpără acum</button>
               </Link>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               <img
                 src="https://mobiladevis.md/wp-content/uploads/2020/10/Lux.jpg"
                 alt=""
