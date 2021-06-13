@@ -2,9 +2,12 @@
   display: flex;
   background-color: white;
   border: none;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
-.products button {
+.container .products button {
+
   border: none;
   background-color: white;
 }

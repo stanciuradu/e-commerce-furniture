@@ -8,36 +8,105 @@ class Products extends React.Component {
     super();
     this.state = {
       // initial array-ul este gol, până ce datele vin de la back-end
-      products: [],
+      products: []
     };
   }
   // facem request-ul catre server pentru preluarea de date
   componentDidMount() {
     this.setState({ products: products });
   }
-  
+
+  handleAllProducts(event) {
+    this.setState({ products: products });
+  }
+
+  handleFilterProductsByOffice(event) {
+    const filterProductsByOffice = this.state.products.filter(
+      (product) =>
+        product.name === "Birou de lemn" || product.name === "Birou Albany"
+    );
+    this.setState({ products: filterProductsByOffice });
+  }
+  handleFilterProductsByLivingRoom(event) {
+    const filterProductsByLivingRoom = this.state.products.filter(
+      (product) =>
+        product.name === "Sufragerie Strowmman" ||
+        product.name === "Canapea Sofiah-Voltera" ||
+        product.name === "Canapea Sofiah-voltera din piele" ||
+        product.name === "Sofa set" ||
+        product.name === "Fotoliu din piele de căprioară"
+    );
+    this.setState({ products: filterProductsByLivingRoom });
+  }
+  handleFilterProductsByKitchen(event) {
+    const handleFilterProductsByKitchen = this.state.products.filter(
+      (product) =>
+        product.name === "Scaune pentru bar" ||
+        product.name === "Masă de bucătărie" ||
+        product.name === "Masă de lemn"
+    );
+    this.setState({ products: handleFilterProductsByKitchen });
+  }
+  handleFilterProductsByBedroom(event) {
+    const handleFilterProductsByBedroom = this.state.products.filter(
+      (product) =>
+        product.name === "Pat din lemn" ||
+        product.name === "Raft suport Mario" ||
+        product.name === "Fotoliu"
+    );
+    this.setState({ products: handleFilterProductsByBedroom });
+  }
+  handleFilterProductsByChildrenRoom(event) {
+    const handleFilterProductsByChildrenRoom = this.state.products.filter(
+      (product) => product.name === "Scaun" || product.name === "Birou de lemn"
+    );
+    this.setState({ products: handleFilterProductsByChildrenRoom });
+  }
   render() {
     return (
       <div className="container">
         <Layout>
-          <h4>Categorii</h4>
+          <h4 className="text-center">Categorii</h4>
           <button className="products">
-            <button type="button">All</button>
-            <button type="button">Birou</button>
-            <button type="button">Sufragerie</button>
-            <button type="button">Bucatarie</button>
-            <button type="button">Dormitor</button>
-            <button type="button">Camera de copii</button>
+            <button
+              type="button"
+              onClick={(event) => this.handleAllProducts(event)}
+            >
+              All
+            </button>
+            <button
+              type="button"
+              onClick={(event) => this.handleFilterProductsByOffice(event)}
+            >
+              Birou
+            </button>
+            <button
+              type="button"
+              onClick={(event) => this.handleFilterProductsByLivingRoom(event)}
+            >
+              Sufragerie
+            </button>
+            <button
+              type="button"
+              onClick={(event) => this.handleFilterProductsByKitchen(event)}
+            >
+              Bucatarie
+            </button>
+            <button
+              type="button"
+              onClick={(event) => this.handleFilterProductsByBedroom(event)}
+            >
+              Dormitor
+            </button>
+            <button
+              type="button"
+              onClick={(event) =>
+                this.handleFilterProductsByChildrenRoom(event)
+              }
+            >
+              Camera de copii
+            </button>
           </button>
-          <h4>Culori</h4>
-          <div className="choose-colors">
-            <button>All</button>
-            <button id="red">Red</button>
-            <button id="green">Green</button>
-            <button id="blue">Blue</button>
-            <button id="brown">Brown</button>
-            <button id="beige">Beige</button>
-          </div>
           {/* pasez array-ul ca props catre ProductsList pentru a se mapa prin el */}
           <ProductsList products={this.state.products} />
         </Layout>
