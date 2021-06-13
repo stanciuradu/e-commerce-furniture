@@ -5,7 +5,7 @@ class ProductsItem extends React.Component {
   constructor() {
     super();
     this.state = {
-      counter: 0
+      counter: 0,
     };
   }
   // fac functia pentru incemetare a state-ului cu o unitate
