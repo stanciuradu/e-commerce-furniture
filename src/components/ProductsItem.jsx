@@ -19,7 +19,7 @@ class ProductsItem extends React.Component {
   render() {
     const { image, name, price } = this.props;
     return (
-      <div className="col-12 col-md-4">
+      <div className="col-12-pi col-md-4">
         <img src={image} alt="" className="w-75" />
         <div className="descriere-products">
           <p>{name}</p>
@@ -36,8 +36,8 @@ class ProductsItem extends React.Component {
             -
           </button>
           {/* randez continutul pe ecran al state-ului initial */}
-        </div>
         <h1>{this.state.counter}</h1>
+        </div>
       </div>
     );
   }
