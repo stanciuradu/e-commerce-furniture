@@ -1,0 +1,17 @@
+.mesaj-cart{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.mesaj-cart button{
+    margin-left: 2rem;
+}
+.table{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+}
+
+

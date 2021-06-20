@@ -1,5 +1,9 @@
 import React from "react";
 import "../components/ProductItem.css";
+// conectez componenta ProductItem la redux
+import { connect } from "react-redux";
+// importam actiunea din reddux.actions
+import { addToCart } from "../redux/actions/cart";
 
 class ProductsItem extends React.Component {
   constructor() {
@@ -17,7 +21,7 @@ class ProductsItem extends React.Component {
     this.setState({ counter: this.state.counter - 1 });
   }
   render() {
-    const { image, name, price } = this.props;
+    const { image, name, price, addToCartWithDispatch } = this.props;
     return (
       <div className="col-12-pi col-md-4">
         <img src={image} alt="" className="w-75" />
@@ -26,7 +30,14 @@ class ProductsItem extends React.Component {
           <p>{price}</p>
         </div>
 
-        <button className="btn btn-outline-warning mb-2">Adaugă în Cart</button>
+        <button
+          className="btn btn-outline-warning mb-2"
+          onClick={() => {
+            addToCartWithDispatch({ image, name, price });
+          }}
+        >
+          Adaugă în Cart
+        </button>
         <p>Adaugă cantitatea de produse în coș</p>
         <div className="quantity-buttons">
           <button type="button" onClick={() => this.handleIncrementCounter()}>
@@ -42,5 +53,10 @@ class ProductsItem extends React.Component {
     );
   }
 }
-
-export default ProductsItem;
+function mapDispatchToProps(dispatch) {
+  return {
+    addToCartWithDispatch: (product) => dispatch(addToCart(product)),
+  };
+}
+// utilizez functia mapDispatchToProps deaorece din cadrul acestei componente la apasarea butonului de addToCart se va modifica store-ul aplicatiei
+export default connect(null, mapDispatchToProps)(ProductsItem);

@@ -38,3 +38,10 @@
 .col-4 h1 {
   text-decoration: none;
 }
+.cart .number-of-products{
+  font-size: 1.6rem;
+  border-radius: 90%;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color:brown;
+}
