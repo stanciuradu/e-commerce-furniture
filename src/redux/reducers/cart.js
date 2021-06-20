@@ -13,12 +13,15 @@ function cartReducer(state = initialState, action) {
         // copiez continutul state-ului initial
         ...state,
         // in cadrul array-ului de produse la state-ul initial adaug noul produs preluat prin action.payload
-        products:[
-          ...state.products,
-          newProducts
-        ]
+        products: [...state.products, newProducts],
       };
       return newState;
+    case "REMOVE_CART":
+      const newStateRemove = {
+        ...state,
+        products: [],
+      };
+      return newStateRemove;
     default:
       return state;
   }

@@ -6,3 +6,11 @@ export function addToCart(products) {
     payload: products,
   };
 }
+
+// actine pentru stergerea produselor din cart
+export function removeCart(products){
+  return{
+    type:'REMOVE_CART',
+    payload:products
+  }
+}

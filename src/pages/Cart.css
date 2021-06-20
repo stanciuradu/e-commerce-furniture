@@ -18,4 +18,7 @@
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
-
+.buttons-options-remove{
+    display: flex;
+    justify-content: space-between;
+}

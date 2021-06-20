@@ -4,6 +4,7 @@ import "../components/ProductItem.css";
 import { connect } from "react-redux";
 // importam actiunea din reddux.actions
 import { addToCart } from "../redux/actions/cart";
+import StripeCheckout from "react-stripe-checkout";
 
 class ProductsItem extends React.Component {
   constructor() {
@@ -48,10 +49,25 @@ class ProductsItem extends React.Component {
           <button type="button" onClick={() => this.handleDecrementCounter()}>
             -
           </button>
+          <StripeCheckout
+            className="stripe"
+            token={onToken}
+            name="Payment online"
+            currency="LEI"
+            amount="price*100"
+            image="https://cdn.dribbble.com/users/3333696/screenshots/13935955/media/5fc0145e5317c5357078ae13e9871cf3.jpg?compress=1&resize=400x300"
+            ComponentClass="div"
+            panelLabel="Give Money"
+            email="info@vidhub.co"
+            stripeKey="pk_test_51IxGvaFUW1mdMZlLGIMJe58paJsoAelt8lhucSRlGv9Y1jVHmaaJ72Mu3egQiQeWDkxVPpHG6cQYbLePLoeMKOxA00rT9KEqVM"
+          />
         </div>
       </div>
     );
   }
+}
+function onToken(token) {
+  console.log(token);
 }
 function mapDispatchToProps(dispatch) {
   return {
