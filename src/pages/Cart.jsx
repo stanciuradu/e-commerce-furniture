@@ -14,28 +14,28 @@ function Cart(props) {
         {productsItems.length ? (
           <div className="w-100">
             <div className="container-products">
-              <div className="row row-cols-4">
-                <div className="col">Produs</div>
-                <div className="col">Nume</div>
-                <div className="col">Pret</div>
-                <div className="col">Plata cu cardul</div>
+              <div className="row row-col-md-4s-4">
+                <div className="col-md-4">Produs</div>
+                <div className="col-md-4">Nume</div>
+                <div className="col-md-4">Pret</div>
+                <div className="col-md-4">Plată cu cardul</div>
               </div>
             </div>
             {productsItems.map((item) => {
               return (
                 // vreau ca produsele sa fie afisate cate patru pe rand
                 <div className="container">
-                  <div className="row row-cols-4 mb-3">
-                    <div className="col">
+                  <div className="row row-col-md-4s-4 mb-3">
+                    <div className="col-md-4">
                       <img src={item.image} alt="" className="w-50" />
                     </div>
-                    <div className="col">
+                    <div className="col-md-4">
                       <h3>{item.name}</h3>
                     </div>
-                    <div className="col">
+                    <div className="col-md-4">
                       <h3>{item.price}</h3>
                     </div>
-                    <div className="col">
+                    <div className="col-md-4">
                       <StripeCheckout
                         className="stripe"
                         token={onToken}
