@@ -11,21 +11,29 @@ function Cart(props) {
       <Layout>
         {productsItems.length ? (
           <div className="w-100">
-            <div className="table mt-2">
-              <p className="w-25">Produs</p>
-              <p className="w-25">Pret</p>
-              <p className="w-25">Cantitate</p>
-              <p className="w-25">Total</p>
+            <div class="container-products">
+              <div class="row row-cols-4">
+                <div class="col">Produs</div>
+                <div class="col">Nume</div>
+                <div class="col">Pret</div>
+              </div>
             </div>
             {productsItems.map((item) => {
               return (
-                // vreau ca produsele sa fie afisate cate trei pe rand
-                <div className="col-12 col-md-3">
-                  <img src={item.image} alt="" className="w-50" />
-                  <h3 className='w-25'>{item.name}</h3>
-               
+                // vreau ca produsele sa fie afisate cate patru pe rand
+                <div class="container">
+                  <div class="row row-cols-4 mb-3">
+                    <div class="col">
+                      <img src={item.image} alt="" className="w-50" />
+                    </div>
+                    <div class="col">
+                      <h3>{item.name}</h3>
+                    </div>
+                    <div class="col">
+                      <h3>{item.price}</h3>
+                    </div>
+                  </div>
                 </div>
-                
               );
             })}
           </div>
