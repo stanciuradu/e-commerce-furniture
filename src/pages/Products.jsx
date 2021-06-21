@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import "../pages/Products.css";
 import products from "../utils/products.json";
-import ProductsList from "../components/ProductsList";
+import ProductList from "../components/ProductList/ProductList";
 
 class Products extends React.Component {
   constructor() {
@@ -114,7 +114,7 @@ class Products extends React.Component {
             </button>
           </button>
           {/* pasez array-ul ca props catre ProductsList pentru a se mapa prin el */}
-          <ProductsList products={this.state.products} />
+          <ProductList products={this.state.products} />
         </Layout>
       </div>
     );

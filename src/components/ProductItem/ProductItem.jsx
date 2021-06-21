@@ -1,11 +1,11 @@
 import React from "react";
-import "../components/ProductItem.css";
+import "../ProductItem/ProductItem.css";
 // conectez componenta ProductItem la redux
 import { connect } from "react-redux";
 // importam actiunea din reddux.actions
-import { addToCart } from "../redux/actions/cart";
+import { addToCart } from "../../redux/actions/cart";
 import StripeCheckout from "react-stripe-checkout";
-import { ReactComponent as Premium } from "../assets/icons/premium.svg";
+import { ReactComponent as Premium } from "../../assets/icons/premium.svg";
 
 function ProductsItem(props) {
   function onToken(token) {

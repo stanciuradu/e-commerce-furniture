@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsRecomItem from "./ProductsRecomItem";
+import ProductsRecomItem from "../ProductsRecommended/ProductsRecomItem";
 
 function productsRecomList(props) {
   const { productsRecom } = props;

@@ -1,16 +1,16 @@
 import React from "react";
-import ProductsItem from "./ProductsItem";
+import ProductItem from "../ProductItem/ProductItem";
 import {Link} from 'react-router-dom';
-import '../components/ProductList.css';
+import '../ProductList/ProductList.css';
 
-function ProductsList(props) {
+function ProductList(props) {
   const { products } = props;
   return (
     <div className="container">
       <div className="row">
         {products.map((product, index) => {
           return (
-            <ProductsItem
+            <ProductItem
               image={product.image}
               name={product.name}
               price={product.price}
@@ -28,4 +28,4 @@ function ProductsList(props) {
   );
 }
 
-export default ProductsList;
+export default ProductList;

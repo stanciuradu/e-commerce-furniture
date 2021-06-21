@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/ProductsRecomItem.css";
+import "../ProductsRecommended/ProductsRecomItem.css";
 
 function productsRecomItem(props) {
   const { image, name, price } = props;
