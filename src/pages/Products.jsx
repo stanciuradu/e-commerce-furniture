@@ -4,8 +4,6 @@ import "../pages/Products.css";
 import products from "../utils/products.json";
 import ProductsList from "../components/ProductsList";
 
-
-
 class Products extends React.Component {
   constructor() {
     super();
