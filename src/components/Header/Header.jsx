@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../assets/images/logo.png";
+import Logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { ReactComponent as Cart } from "../assets/icons/cart.svg";
-import "../components/Header.css";
+import { ReactComponent as Cart } from "../../assets/icons/cart.svg";
+import "../Header/Header.css";
 import { connect } from "react-redux";
 
 function Header(props) {
