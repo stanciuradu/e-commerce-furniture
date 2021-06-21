@@ -6,6 +6,12 @@
   margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) { 
+  .products{
+    flex-direction: column;
+  }
+ }
+
 .container .products button {
 
   border: none;
