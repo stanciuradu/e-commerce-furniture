@@ -1,9 +1,9 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import { Link } from "react-router-dom";
-import "../pages/Home.css";
-import productsRecom from "../utils/productsRecom.json";
-import ProductsRecomList from "../components/ProductsRecommended/ProductsRecomList";
+import "../HomePage/Home.css";
+import productsRecom from "../../utils/productsRecom.json";
+import ProductsRecomList from "../../components/ProductsRecommended/ProductsRecomList";
 
 class Home extends React.Component {
   constructor() {

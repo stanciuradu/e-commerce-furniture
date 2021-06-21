@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../components/Layout";
-import "../pages/About.css";
+import Layout from "../../components/Layout";
+import "../About/About.css";
 
 function About() {
   return (

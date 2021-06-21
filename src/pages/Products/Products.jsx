@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../components/Layout";
-import "../pages/Products.css";
-import products from "../utils/products.json";
-import ProductList from "../components/ProductList/ProductList";
+import Layout from "../../components/Layout";
+import "../Products/Products.css";
+import products from "../../utils/products.json";
+import ProductList from "../../components/ProductList/ProductList";
 
 class Products extends React.Component {
   constructor() {

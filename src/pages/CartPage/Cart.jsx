@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import "../pages/Cart.css";
+import "../CartPage/Cart.css";
 import StripeCheckout from "react-stripe-checkout";
-import { removeCart } from "../redux/actions/cart";
+import { removeCart } from "../../redux/actions/cart";
 
 function Cart(props) {
   const { productsItems, removeCartWithDispatch } = props;

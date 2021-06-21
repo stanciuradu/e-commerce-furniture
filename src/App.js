@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Products from './pages/Products';
+import Home from './pages/HomePage/Home';
+import About from './pages/About/About';
+import Products from './pages/Products/Products';
 import Page404 from './pages/Page404';
-import Cart from './pages/Cart';
+import Cart from './pages/CartPage/Cart';
 
 function App() {
   return (
