@@ -10,10 +10,10 @@ function Header(props) {
   const { numberOfProducts } = props;
   return (
     <div className="row">
-      <div className="col-4">
+      <div className="col-md-4">
         <img src={Logo} alt="" />
       </div>
-      <div className="col-4">
+      <div className="col-md-4">
         <nav>
           <ul>
             <li>
@@ -34,7 +34,7 @@ function Header(props) {
           </ul>
         </nav>
       </div>
-      <div className="col-4">
+      <div className="col-md-4">
         <div className="cart">
           <Link to="/cart" className="link">
             <h3>Cart</h3>
