@@ -1,5 +1,7 @@
 import React from "react";
 import ProductsItem from "./ProductsItem";
+import {Link} from 'react-router-dom';
+import '../components/ProductList.css';
 
 function ProductsList(props) {
   const { products } = props;
@@ -16,6 +18,11 @@ function ProductsList(props) {
             />
           );
         })}
+      </div>
+      <div className='button-home'>
+        <Link to='/'>
+          <button className='btn btn-outline-dark mb-1'>Înapoi la Home</button>
+        </Link>
       </div>
     </div>
   );
