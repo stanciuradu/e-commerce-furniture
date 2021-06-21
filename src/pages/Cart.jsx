@@ -87,6 +87,7 @@ function onToken(token) {
   console.log(token);
 }
 function mapStateToProps(state) {
+  console.log(state);
   return {
     // productsItem sunt produsele din cart
     productsItems: state.products,
