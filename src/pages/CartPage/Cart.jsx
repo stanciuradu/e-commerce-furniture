@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "../CartPage/Cart.css";
 import StripeCheckout from "react-stripe-checkout";
-import { removeCart } from "../../redux/actions/cart";
+import { removeCart } from "../../redux/cartFolder/cartActions";
 
 function Cart(props) {
   const { productsItems, removeCartWithDispatch } = props;

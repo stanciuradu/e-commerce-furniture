@@ -1,6 +1,6 @@
 // in cadrul acestui fisier se pune set-up pentru store-ul aplicatiei
 import { createStore } from "redux";
-import cartReducer from "./reducers/cart";
+import cartReducer from "../redux/cartFolder/cartReducers";
 
 // utilizam Redux-Persist in cadrul aplicatiei pentru o stocare persisitenta a produselor, astfel încât acestea să nu se piardă la refresh
 import { persistStore, persistReducer } from "redux-persist";

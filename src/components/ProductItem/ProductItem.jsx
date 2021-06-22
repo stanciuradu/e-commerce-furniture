@@ -3,7 +3,7 @@ import "../ProductItem/ProductItem.css";
 // conectez componenta ProductItem la redux
 import { connect } from "react-redux";
 // importam actiunea din reddux.actions
-import { addToCart } from "../../redux/actions/cart";
+import { addToCart } from "../../redux/cartFolder/cartActions";
 import StripeCheckout from "react-stripe-checkout";
 import { ReactComponent as Premium } from "../../assets/icons/premium.svg";
 
