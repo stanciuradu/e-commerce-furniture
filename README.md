@@ -1,4 +1,4 @@
-# E-commerce special realizat pentru pasinții de mobilă
+# E-commerce special realizat pentru pasionații de mobilă
 
 Acest proiect a fost creat cu 5 tehnologii și un API extern de la Stripe, pentru realizarea plății online de către utilizator 
 ## Funcționalități:
