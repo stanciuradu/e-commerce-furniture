@@ -17,7 +17,7 @@ Acest proiect a fost creat cu 5 tehnologii și un API extern de la Stripe, pentr
 #
 ->prin apăsarea butonului Pay with Card se deschide un pop-up în care utilizatorul va putea introduce datele cardului bancar
 #
-Link către aplicație:https://confortsuites.netlify.app/
+Link către aplicație:https://confort-suites.netlify.app/
 
 
 
